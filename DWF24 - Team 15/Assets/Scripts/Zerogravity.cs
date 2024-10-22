@@ -20,11 +20,11 @@ public class Zerogravity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        rbd2.velocity = collision.rigidbody.velocity;
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    rbd2.AddForce(collision.gameObject.velocity * 100f);
+    //}
 }

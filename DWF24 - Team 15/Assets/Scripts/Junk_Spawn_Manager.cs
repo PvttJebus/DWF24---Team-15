@@ -10,19 +10,26 @@ public class Junk_Spawn_Manager : MonoBehaviour
     public GameObject spawnPrefabM;
     public GameObject spawnPrefabLrg;
     public GameObject spawnPrefabLeg;
-    // Start is called before the first frame update
+    public GameObject[] spawnPoints;
+    public GameObject currentpoint;
+    int index;
+
+
     void Start()
     {
+
+        spawnPoints = GameObject.FindGameObjectsWithTag("spawnpoints");
         
     }
-
-    // Update is called once per frame
     void Update()
     {
+        index = Random.Range(0, spawnPoints.Length);
+        currentpoint = spawnPoints[index];
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Instantiate(spawnPrefabM,Spawner.transform);
-            
+            Instantiate(spawnPrefabM, currentpoint.transform);
+
+
         }
     }
 }
