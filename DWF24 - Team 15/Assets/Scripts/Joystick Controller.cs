@@ -31,7 +31,7 @@ public partial class @JoystickController: IInputActionCollection2, IDisposable
                     ""name"": ""joystickX"",
                     ""type"": ""Value"",
                     ""id"": ""7e842dfc-1934-4ee6-9b7e-f6ead784599a"",
-                    ""expectedControlType"": ""Analog"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
