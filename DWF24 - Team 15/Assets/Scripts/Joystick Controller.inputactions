@@ -1,0 +1,100 @@
+{
+    "name": "Joystick Controller",
+    "maps": [
+        {
+            "name": "CanArm Controls",
+            "id": "1fbde9d2-1056-4a83-9b6c-a3ea98241f1a",
+            "actions": [
+                {
+                    "name": "joystickX",
+                    "type": "Value",
+                    "id": "7e842dfc-1934-4ee6-9b7e-f6ead784599a",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "joystickY",
+                    "type": "Value",
+                    "id": "454aa3cb-dc27-4369-9afd-4db24a1cab3d",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "23a50dd0-558f-495c-b158-77be5121ab9f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "692be12c-609e-43a3-bfe5-f12f44f1e4e1",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6e02bfc3-6427-46f2-9e2c-442a69820891",
+                    "path": "<HID::Adafruit Feather RP2040>/rx",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "joystickX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96ddd18d-9d80-4496-a0c4-f7bcc6e129a5",
+                    "path": "<HID::Adafruit Feather RP2040>/ry",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "joystickY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74b1ad84-1ead-498a-a6f1-03f806302f14",
+                    "path": "<HID::Adafruit Feather RP2040>/button9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "47479557-a348-4b03-abb5-a42d594518d5",
+                    "path": "<HID::Adafruit Feather RP2040>/button10",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Feather Controller",
+            "bindingGroup": "Feather Controller",
+            "devices": []
+        }
+    ]
+}

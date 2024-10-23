@@ -762,6 +762,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 76466910}
   rotationSpeed: 10
+  Joystick:
+    m_Name: Joystick
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: aa562371-3f45-4a8b-b4cc-fb1252fcccc5
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  canArm:
+    m_Name: Can Arm
+    m_Id: 1efb7c9d-a036-4542-8406-43066bd8d796
+    m_Asset: {fileID: 0}
+    m_Actions:
+    - m_Name: New action
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: bd7165ab-e6b4-43f2-a013-7d4b1552a336
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Bindings:
+    - m_Name: 
+      m_Id: 53c9a6eb-fd57-436c-a7c9-643a2e65a12e
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: New action
+      m_Flags: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
