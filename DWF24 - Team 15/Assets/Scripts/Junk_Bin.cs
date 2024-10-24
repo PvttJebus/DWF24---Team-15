@@ -23,10 +23,6 @@ public class Junk_Bin : MonoBehaviour
     public int largeValue = 750;
     public int legendaryValue = 1000;
 
-
-    //Bool to change the location of the bin
-    bool switchFlipped;
-
     //bool for moving the bin
     bool switchFlipped;
 
@@ -40,8 +36,6 @@ public class Junk_Bin : MonoBehaviour
     void Update()
     {
         junkCollectedText.text = "Junk Collected: " + junkCollected.ToString();
-
-        totalScoreText.text = "Score: " + totalScore.ToString();
 
         junkScoreText.text = "Score: " + junkScore.ToString();
         timerText.text = timer.ToString("F1");
@@ -60,7 +54,7 @@ public class Junk_Bin : MonoBehaviour
             gameObject.transform.position = new Vector3(-5.09f, -3.65f, 0f);
             Debug.Log("Wotking 2");
         }
-
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Value = collision.gameObject.GetComponent<JunkValue>();
