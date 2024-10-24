@@ -603,6 +603,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+
 --- !u!114 &171671516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,6 +652,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1990460343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
 --- !u!1 &461446085
 GameObject:
   m_ObjectHideFlags: 0
