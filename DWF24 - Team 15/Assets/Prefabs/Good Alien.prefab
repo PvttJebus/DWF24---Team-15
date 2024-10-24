@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8942198485415953765}
   - component: {fileID: 8932302047413610428}
   m_Layer: 8
-  m_Name: Large Junk
+  m_Name: Good Alien
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,4 +229,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   junkValue: 500
-  timeValue: 0
+  timeValue: 10
