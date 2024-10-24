@@ -19,6 +19,12 @@ public class Junk_Bin : MonoBehaviour
     public int medValue = 500;
     public int largeValue = 750;
     public int legendaryValue = 1000;
+<<<<<<< Updated upstream
+=======
+
+    //Bool to change the location of the bin
+    bool switchFlipped;
+>>>>>>> Stashed changes
 
     // Update is called once per frame
     void Update()
@@ -26,6 +32,23 @@ public class Junk_Bin : MonoBehaviour
         //Display text to screen
         junkCollectedText.text = "Junk Collected: " + junkCollected.ToString();
         totalScoreText.text = "Score: " + totalScore.ToString();
+<<<<<<< Updated upstream
+=======
+
+        //Check for switch flip and change location accordingly
+        if(Input.GetButtonDown("Fire1"))
+        {
+            switchFlipped = true;
+            gameObject.transform.position = new Vector3(5.09f, -3.65f, 0f);
+            Debug.Log("Working 1");
+        }
+        if(Input.GetButtonUp("Fire1"))
+        {
+            switchFlipped = false;
+            gameObject.transform.position = new Vector3(-5.09f, -3.65f, 0f);
+            Debug.Log("Wotking 2");
+        }
+>>>>>>> Stashed changes
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
