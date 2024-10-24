@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 171671511}
   - component: {fileID: 171671513}
   - component: {fileID: 171671515}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grabber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 76466910}
-  rotationSpeed: 10
+  rotationSpeed: 50
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,7 +1199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1230704138}
-  rotationSpeed: 10
+  rotationSpeed: 50
 --- !u!1 &1049448745
 GameObject:
   m_ObjectHideFlags: 0
