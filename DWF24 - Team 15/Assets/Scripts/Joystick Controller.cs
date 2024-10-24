@@ -40,7 +40,7 @@ public partial class @JoystickController: IInputActionCollection2, IDisposable
                     ""name"": ""joystickY"",
                     ""type"": ""Value"",
                     ""id"": ""454aa3cb-dc27-4369-9afd-4db24a1cab3d"",
-                    ""expectedControlType"": ""Analog"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -68,10 +68,32 @@ public partial class @JoystickController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""6e02bfc3-6427-46f2-9e2c-442a69820891"",
-                    ""path"": ""<HID::Adafruit Feather RP2040>/rx"",
+                    ""path"": ""<HID::Adafruit Feather RP2040>/stick/x"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Feather Controller"",
+                    ""action"": ""joystickX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6b7c6d07-e4a4-49df-91d3-c9e3d6d446f7"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Feather Controller"",
+                    ""action"": ""joystickX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""07d4975f-09eb-4ddb-992b-bf17a28e9f15"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Feather Controller"",
                     ""action"": ""joystickX"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -79,7 +101,29 @@ public partial class @JoystickController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""96ddd18d-9d80-4496-a0c4-f7bcc6e129a5"",
-                    ""path"": ""<HID::Adafruit Feather RP2040>/ry"",
+                    ""path"": ""<HID::Adafruit Feather RP2040>/stick/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Feather Controller"",
+                    ""action"": ""joystickY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8d442d59-9cbb-48a6-992e-4a829da66b5b"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""joystickY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""96d64edd-3861-48e0-bcad-8c5ab0eaf615"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
