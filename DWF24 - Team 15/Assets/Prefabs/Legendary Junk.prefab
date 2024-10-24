@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3808934917286956805}
   - component: {fileID: 2408234275151945992}
   - component: {fileID: 4204200448812792042}
-  - component: {fileID: 3153421412971132957}
+  - component: {fileID: 348717262821936494}
   m_Layer: 8
   m_Name: Legendary Junk
   m_TagString: Grabbable
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialVelocity: 1.5
---- !u!114 &3153421412971132957
+--- !u!114 &348717262821936494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1859689644165273404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 074d6d52cd6aee94d8783d87697552bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 45851640d42723d45a3b3521b7f30f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialVelocity: 1.5
+  junkValue: 1000
