@@ -7,6 +7,7 @@ public class Grabbable : MonoBehaviour
     //Script to freeze the pos XYZ of the space junk gameobject and set it to the position of the claw gameobject
     public GameObject Claw;
     bool isColliding;
+    bool isHolding = false;
 
     // Update is called once per frame
     void Update()
@@ -17,8 +18,9 @@ public class Grabbable : MonoBehaviour
             if (Input.GetButton("Grab"))
             {               
                 gameObject.transform.SetPositionAndRotation(Claw.transform.position, Claw.transform.rotation); //Set the position and rotation of the gameobject to the claw position
+                isHolding = true;
             }
-            if (Input.GetButtonUp("Grab"))
+            if (Input.GetButton("Grab") && isHolding == true)
             {
                 isColliding = false;
             }
