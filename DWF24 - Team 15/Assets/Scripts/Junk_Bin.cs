@@ -23,9 +23,6 @@ public class Junk_Bin : MonoBehaviour
     public int largeValue = 750;
     public int legendaryValue = 1000;
 
-    //bool for moving the bin
-    bool switchFlipped;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -44,13 +41,13 @@ public class Junk_Bin : MonoBehaviour
         //Check for switch flip and change location accordingly
         if (Input.GetButtonDown("Fire1"))
         {
-            switchFlipped = true;
+        
             gameObject.transform.position = new Vector3(5.09f, -3.65f, 0f);
             Debug.Log("Working 1");
         }
         if (Input.GetButtonUp("Fire1"))
         {
-            switchFlipped = false;
+            
             gameObject.transform.position = new Vector3(-5.09f, -3.65f, 0f);
             Debug.Log("Wotking 2");
         }
