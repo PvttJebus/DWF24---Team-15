@@ -15,12 +15,12 @@ public class Grabbable : MonoBehaviour
         //check for button press
         if (isColliding == true)
         {
-            if (Input.GetButton("Grab"))
+            if (Input.GetKeyDown("Grab"))
             {               
                 gameObject.transform.SetPositionAndRotation(Claw.transform.position, Claw.transform.rotation); //Set the position and rotation of the gameobject to the claw position
                 isHolding = true;
             }
-            if (Input.GetButton("Grab") && isHolding == true)
+            if (Input.GetKeyDown("Grab") && isHolding == true)
             {
                 isColliding = false;
             }

@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 1222010889476026607}
   - component: {fileID: 1327189936306669260}
   - component: {fileID: 5728759476344881357}
+  - component: {fileID: 6798960819292645348}
   - component: {fileID: 1726250559053711318}
   - component: {fileID: 162997981502892507}
   - component: {fileID: 8942198485415953765}
   - component: {fileID: 642859769401372878}
-  - component: {fileID: 2552530649217321294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Large Junk
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
@@ -125,6 +125,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &6798960819292645348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4244115417674440687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ea73546b862fd40949499fa624cb85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  movementDirection: {x: -1, y: 0, z: 0}
 --- !u!50 &1726250559053711318
 Rigidbody2D:
   serializedVersion: 4
@@ -199,8 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6d52cd6aee94d8783d87697552bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 1.5
-  GameObject: {fileID: 0}
+  initialVelocity: 1.5
 --- !u!114 &642859769401372878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,18 +226,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6d52cd6aee94d8783d87697552bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 1.5
-  GameObject: {fileID: 0}
---- !u!114 &2552530649217321294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4244115417674440687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45851640d42723d45a3b3521b7f30f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  junkValue: 500
+  initialVelocity: 1.5

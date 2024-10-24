@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8492312030519477818}
   - component: {fileID: 8594157364134490137}
+  - component: {fileID: 8805504474905533044}
   - component: {fileID: 3075695512724436504}
   - component: {fileID: 8276326512986435843}
   - component: {fileID: 7452508973662904078}
   - component: {fileID: 7813970984196113245}
   - component: {fileID: 7909536096022529563}
-  - component: {fileID: 5063134205062823835}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Med Junk
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
@@ -90,6 +90,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8805504474905533044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6902211583753922874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ea73546b862fd40949499fa624cb85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  movementDirection: {x: -1, y: 0, z: 0}
 --- !u!58 &3075695512724436504
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -199,8 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6d52cd6aee94d8783d87697552bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 1.5
-  GameObject: {fileID: 0}
+  initialVelocity: 1.5
 --- !u!114 &7909536096022529563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,18 +226,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d6d52cd6aee94d8783d87697552bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 1.5
-  GameObject: {fileID: 0}
---- !u!114 &5063134205062823835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6902211583753922874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45851640d42723d45a3b3521b7f30f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  junkValue: 250
+  initialVelocity: 1.5
