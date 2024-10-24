@@ -5,10 +5,10 @@ using UnityEngine;
 public class GameobjectVelocity : MonoBehaviour
 {
 
-    Rigidbody2D ObjectRB;
+    public Rigidbody2D ObjectRB;
 
     public float initialVelocity = 1.5f; //Velocity to apply to the game object
-    bool applyVelocity = false;
+    public bool applyVelocity = false;
     
     void Awake()
     {
