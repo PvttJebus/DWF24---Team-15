@@ -438,6 +438,7 @@ GameObject:
   - component: {fileID: 171671511}
   - component: {fileID: 171671513}
   - component: {fileID: 171671515}
+  - component: {fileID: 171671516}
   m_Layer: 8
   m_Name: Grabber
   m_TagString: Untagged
@@ -602,6 +603,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &171671516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171671510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59f9672675f661418c1c7aa2afb94f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabber: {fileID: 171671510}
+  isHolding: 0
 --- !u!1 &318642398
 GameObject:
   m_ObjectHideFlags: 0
