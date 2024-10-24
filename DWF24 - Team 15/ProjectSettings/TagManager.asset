@@ -7,6 +7,9 @@ TagManager:
   - Grabbable
   - JunkBin
   - Small Junk
+  - Medium Junk
+  - Large Junk
+  - Legendary Junk
   layers:
   - Default
   - TransparentFX
