@@ -39,8 +39,7 @@ public class Junk_Bin : MonoBehaviour
             Debug.Log("Working 1");
         }
         if (Input.GetButtonUp("Fire1"))
-        {
-            
+        {           
             gameObject.transform.position = new Vector3(-5.09f, -3.65f, 0f);
             Debug.Log("Wotking 2");
         }
