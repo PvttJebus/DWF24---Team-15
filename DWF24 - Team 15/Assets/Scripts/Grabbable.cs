@@ -4,35 +4,43 @@ using UnityEngine;
 
 public class Grabbable : MonoBehaviour
 {
+    GameObject Claw;
     //Script to freeze the pos XYZ of the space junk gameobject and set it to the position of the claw gameobject
-    public GameObject Claw;
     bool isColliding;
-    bool isHolding = false;
+    bool isHolding;
+    bool buttonClick;
 
     // Update is called once per frame
     void Update()
     {
+        /*
+         * Dropped items still on screen will be sucked back to claw for some reason
+         */
         //check for button press
-        if (isColliding == true)
+        if (isColliding == true && Input.GetButtonDown("Grab"))
+        {             
+            buttonClick = !buttonClick;
+        }
+        if (buttonClick)
         {
-            if (Input.GetButton("Grab"))
-            {               
-                gameObject.transform.SetPositionAndRotation(Claw.transform.position, Claw.transform.rotation); //Set the position and rotation of the gameobject to the claw position
-                isHolding = true;
-            }
-            if (Input.GetButton("Grab") && isHolding == true)
-            {
-                isColliding = false;
-            }
+            gameObject.transform.SetPositionAndRotation(Claw.transform.position, Claw.transform.rotation); //Set the position and rotation of the gameobject to the claw position
+            isHolding = true;
+        }
+        else
+        {
+            isHolding = false;            
+            gameObject.transform.SetPositionAndRotation(gameObject.transform.position, gameObject.transform.rotation);          
         }
     }
 
     //check if we are colliding with the claw
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == Claw) 
+        if (collision.gameObject.tag == "Claw") 
         { 
             isColliding = true;
+            Claw = collision.gameObject;
+            Debug.Log("Colliding");
         }
     }
 }
