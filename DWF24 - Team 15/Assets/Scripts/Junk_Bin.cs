@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Junk_Bin : MonoBehaviour
 {
 
-    public Grab_Function grabber;
+    
     public JunkValue Value;
     public int junkCollected = 0;
     public Text junkCollectedText;
@@ -23,12 +23,6 @@ public class Junk_Bin : MonoBehaviour
     public int largeValue = 750;
     public int legendaryValue = 1000;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        grabber = GameObject.Find("Grabber").GetComponent<Grab_Function>();
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -40,8 +34,7 @@ public class Junk_Bin : MonoBehaviour
 
         //Check for switch flip and change location accordingly
         if (Input.GetButtonDown("Fire1"))
-        {
-        
+        {        
             gameObject.transform.position = new Vector3(5.09f, -3.65f, 0f);
             Debug.Log("Working 1");
         }
@@ -58,10 +51,10 @@ public class Junk_Bin : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Grabbable") == true)
         {
+            Debug.Log("Colliding with grabbable");
 
-
-            Destroy(grabber.transform.GetChild(0).gameObject);
-            grabber.isHolding = false;
+            //Destroy(grabber.transform.GetChild(0).gameObject);
+            Destroy(collision.gameObject);
             junkScore += Value.junkValue;
             timer += Value.timeValue;
             junkCollected++;

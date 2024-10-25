@@ -438,10 +438,9 @@ GameObject:
   - component: {fileID: 171671511}
   - component: {fileID: 171671513}
   - component: {fileID: 171671515}
-  - component: {fileID: 171671516}
   m_Layer: 0
   m_Name: Grabber
-  m_TagString: Untagged
+  m_TagString: Claw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,23 +603,6 @@ BoxCollider2D:
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 
---- !u!114 &171671516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171671510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59f9672675f661418c1c7aa2afb94f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabber: {fileID: 171671510}
-  goVelocity: {fileID: 0}
-  objectVector: {x: 0, y: 0, z: 0}
-  objectQuaternion: {x: 0, y: 0, z: 0, w: 0}
-  isHolding: 0
 --- !u!1 &318642398
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +634,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1990460343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-
 --- !u!1 &461446085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,7 +1518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c0ed292b5b2664ca3e00d03aaba3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grabber: {fileID: 171671516}
   Value: {fileID: 0}
   junkCollected: 0
   junkCollectedText: {fileID: 119032024}
@@ -1545,6 +1525,10 @@ MonoBehaviour:
   junkScoreText: {fileID: 1572867092}
   timerText: {fileID: 40141525}
   timer: 120
+  smallValue: 250
+  medValue: 500
+  largeValue: 750
+  legendaryValue: 1000
 --- !u!1 &1150353540
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,10 +2071,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0590b88b9bc644cb905dc7e86c11b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPrefabSM: {fileID: 4394544020286565953, guid: 78c2368de5260384692751ee706c9e18, type: 3}
-  spawnPrefabM: {fileID: 6902211583753922874, guid: 017f294758b49644384dccbc50f43bc4, type: 3}
-  spawnPrefabLrg: {fileID: 4244115417674440687, guid: e83a36012e60e4e45b0c3bca448de0c2, type: 3}
-  spawnPrefabLeg: {fileID: 1859689644165273404, guid: c0e73df117ee9a34dbae640811fa7fe1, type: 3}
+  spawnPrefabSM: {fileID: 8728207908877551053, guid: 1830f69e21e4f3a4b91ec9f89fab5cd0, type: 3}
+  spawnPrefabM: {fileID: 6674791421849913531, guid: eab0c08154fa45f4d8fe0048069b706f, type: 3}
+  spawnPrefabLrg: {fileID: 9212557338122571607, guid: 4b816209593682042ba24401fb13b6d7, type: 3}
+  spawnPrefabLeg: {fileID: 6719629937992853426, guid: be53b62e5eb89fd47a31131ff32cf012, type: 3}
   weightSM: 50
   weightM: 30
   weightLrg: 15
