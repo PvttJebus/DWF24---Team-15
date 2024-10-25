@@ -9,14 +9,22 @@ public class JunkSpawnManager : MonoBehaviour
     public GameObject spawnPrefabM;   // Medium
     public GameObject spawnPrefabLrg; // Large
     public GameObject spawnPrefabLeg; // Legendary
+    public GameObject spawnPreFabGoodAlien;
+    public GameObject spawnPreFabBadAlien;
+    public GameObject spawnPreFabNegative;
+    public GameObject spawnPreFabPositive;
 
     // Spawn weights for each prefab
     [Header("Spawn Weights")]
     [Tooltip("Higher weight means higher chance to spawn.")]
     public int weightSM = 50; // Small Junk weight
     public int weightM = 30;  // Medium Junk weight
+    public int weightPos = 30;  // Medium Junk weight
+    public int weightNeg = 30;  // Medium Junk weight
     public int weightLrg = 15; // Large Junk weight
     public int weightLeg = 5;  // Legendary Junk weight
+    public int weightGood = 5;  // Legendary Junk weight
+    public int weightBad = 5;  // Legendary Junk weight
 
     // Arrays of sprites for each junk type
     [Header("Junk Sprites")]
@@ -28,6 +36,14 @@ public class JunkSpawnManager : MonoBehaviour
     public Sprite[] largeSprites;
     [Tooltip("Sprites for Legendary Junk")]
     public Sprite[] legendarySprites;
+    [Tooltip("Sprites for Positive")]
+    public Sprite[] positiveSprites;
+    [Tooltip("Sprites for Negative")]
+    public Sprite[] negativeSprites;
+    [Tooltip("Sprites for Good Alien")]
+    public Sprite[] goodAlienSprites;
+    [Tooltip("Sprites for Bad Alien")]
+    public Sprite[] badAlienSprites;
 
     // Array to hold all spawn points tagged as "spawnpoints"
     public GameObject[] spawnPoints;
@@ -62,10 +78,10 @@ public class JunkSpawnManager : MonoBehaviour
         spawnPoints = GameObject.FindGameObjectsWithTag("spawnpoints");
 
         // Initialize the junkPrefabs array with the different prefabs
-        junkPrefabs = new GameObject[] { spawnPrefabSM, spawnPrefabM, spawnPrefabLrg, spawnPrefabLeg };
+        junkPrefabs = new GameObject[] { spawnPrefabSM, spawnPrefabM, spawnPrefabLrg, spawnPrefabLeg, spawnPreFabGoodAlien,spawnPreFabBadAlien, spawnPreFabNegative, spawnPreFabPositive};
 
         // Initialize the junkWeights array corresponding to each prefab
-        junkWeights = new int[] { weightSM, weightM, weightLrg, weightLeg };
+        junkWeights = new int[] { weightSM, weightM, weightLrg, weightLeg, weightGood, weightBad, weightPos, weightNeg };
 
         // Get the layer index for "Junk"
         junkLayer = LayerMask.NameToLayer(junkLayerName);
@@ -225,6 +241,22 @@ public class JunkSpawnManager : MonoBehaviour
         else if (prefab == spawnPrefabLeg)
         {
             spriteArray = legendarySprites;
+        }
+        else if (prefab == spawnPreFabGoodAlien)
+        {
+            spriteArray = legendarySprites;
+        }
+        else if (prefab == spawnPreFabBadAlien)
+        {
+            spriteArray = legendarySprites;
+        }
+        else if (prefab == spawnPreFabPositive)
+        {
+            spriteArray = positiveSprites;
+        }
+        else if (prefab == spawnPreFabNegative)
+        {
+            spriteArray = negativeSprites;
         }
 
         if (spriteArray != null && spriteArray.Length > 0)
