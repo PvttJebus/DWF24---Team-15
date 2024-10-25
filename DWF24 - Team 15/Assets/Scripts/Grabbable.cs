@@ -14,20 +14,25 @@ public class Grabbable : MonoBehaviour
     void Update()
     {
         /*
-         * Dropped items still on screen will be sucked back to claw for some reason
+         * Dropped items still on screen will be sucked back to claw for some reason - fixed
          */
         //check for button press
         if (isColliding == true && Input.GetButtonDown("Grab"))
         {             
-            buttonClick = !buttonClick;
+            buttonClick = true;
         }
-        if (buttonClick)
+        if (Input.GetButtonUp("Grab"))
+        {
+            isColliding = false;
+        }
+        if (buttonClick == true)
         {
             gameObject.transform.SetPositionAndRotation(Claw.transform.position, Claw.transform.rotation); //Set the position and rotation of the gameobject to the claw position
             isHolding = true;
         }
-        else
+        if (isColliding == false && Input.GetButtonDown("Grab"))
         {
+            buttonClick = false;
             isHolding = false;            
             gameObject.transform.SetPositionAndRotation(gameObject.transform.position, gameObject.transform.rotation);          
         }
